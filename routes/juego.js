@@ -1,6 +1,6 @@
-import routerx from 'express-promise-router';
-import juegoController from '../controllers/JuegoController';
-import auth from '../middlewares/auth';
+const routerx = require('express-promise-router');
+const juegoController = require('../controllers/JuegoController');
+const auth = require('../middlewares/auth');
 
 const router=routerx();
 
@@ -11,4 +11,4 @@ router.put('/update', auth.verifyAdministrador, juegoController.update);
 router.post('/upload', juegoController.saveJSON)
 router.get('/json', juegoController.getJSON)
 
-export default router;
+module.exports = router;

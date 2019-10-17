@@ -1,11 +1,13 @@
-import routerx from 'express-promise-router';
-import usuarioRouter from './usuario';
-import progresoRouter from './progreso'
-import juegoRouter from './juego'
+const routerx = require('express-promise-router');
+const usuarioRouter = require('./usuario');
+const progresoRouter = require( './progreso');
+const juegoRouter  = require('./juego')
 const router=routerx();
+
+console.log(usuarioRouter)
 
 
 router.use('/usuario',usuarioRouter);
 router.use('/progreso',progresoRouter);
 router.use('/juego',juegoRouter);
-export default router;
+module.exports = router;

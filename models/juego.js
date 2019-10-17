@@ -1,4 +1,5 @@
-import mongoose, {Schema} from 'mongoose';
+const mongoose= require('mongoose');
+const {Schema}  = require('mongoose');
 const juegoSchema = new Schema({
     player: { type: Object, required: true },
     blocks: { type: Array, required: true },
@@ -10,4 +11,4 @@ const juegoSchema = new Schema({
 });
 
 const Juego = mongoose.model('juego',juegoSchema);
-export default Juego;
+module.exports = Juego;

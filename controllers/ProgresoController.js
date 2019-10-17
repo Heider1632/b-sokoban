@@ -1,5 +1,5 @@
-import models from '../models';
-export default {
+const models  = require('../models');
+module.exports = {
     add: async (req,res,next) =>{
         try {
             const reg = await models.Progreso.create(req.body); 

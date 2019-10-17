@@ -1,8 +1,8 @@
-import Usuario from './usuario';
-import Progreso from './progreso';
-import Juego from './juego';
+const Usuario  = require('./usuario');
+const Progreso  = require('./progreso');
+const Juego  = require('./juego');
 
-export default {
+module.exports =  {
     Usuario,
     Progreso,
     Juego

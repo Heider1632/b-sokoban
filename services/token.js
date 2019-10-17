@@ -1,5 +1,5 @@
-import jwt from 'jsonwebtoken';
-import models from '../models';
+const jwt = require('jsonwebtoken');
+const models = require('../models');
 
 async function checkToken(token){
     let __id = null;
@@ -18,7 +18,7 @@ async function checkToken(token){
     }
 }
 
-export default {
+module.exports = {
     encode: async (user) => {
         const token = jwt.sign({_id: user._id, user: user},'clavesecretaparagenerartoken',{expiresIn: '1d'});
         return token;
