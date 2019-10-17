@@ -42,6 +42,10 @@ app.use(function (req, res, next) {
     next();
 });
 
+app.use('/', (req, res) => {
+    res.status(200).json({ name: 'hello b-sokoban' })
+})
+
 app.use('/api',router);
 app.set('port',process.env.PORT || 3000);
 
