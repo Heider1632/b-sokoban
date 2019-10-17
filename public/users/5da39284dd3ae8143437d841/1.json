@@ -1,0 +1,32 @@
+{
+  "level": "1",
+  "steps": [
+    {
+      "icon": "arrow_forward",
+      "text": "derecha",
+      "keyCode": 39,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        },
+        {
+          "counter": 2,
+          "done": true
+        },
+        {
+          "counter": 3,
+          "done": true
+        },
+        {
+          "counter": 4,
+          "done": true
+        }
+      ],
+      "done": false
+    }
+  ],
+  "start": 1571008824379,
+  "end": 1571008825299,
+  "duration": 920
+}
