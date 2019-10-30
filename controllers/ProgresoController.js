@@ -30,7 +30,7 @@ module.exports = {
     },
     one: async (req, res, next) => {
         try {
-            const reg=await models.Progreso.find({ _id : req.query._id })
+            const reg=await models.Progreso.find({ _id : req.query._id }).populate({ path: 'Juego', model: 'juego', select: 'nombre' })
             res.status(200).json(reg);
         } catch(e){
             res.status(500).send({
