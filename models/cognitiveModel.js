@@ -1,6 +1,6 @@
 const mongoose= require('mongoose');
 const {Schema}  = require('mongoose');
-const cognitibveModelSchema = new Schema({
+const cognitiveModelSchema = new Schema({
     actions: { 
         type: [],
         required: true
@@ -9,5 +9,5 @@ const cognitibveModelSchema = new Schema({
     name: { type: String, required: true }
 });
 
-const CognitiveModel = mongoose.model('cognitiveModel',cognitibveModelSchema);
+const CognitiveModel = mongoose.model('cognitiveModel',cognitiveModelSchema);
 module.exports = CognitiveModel;

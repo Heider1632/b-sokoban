@@ -53,7 +53,7 @@ module.exports = {
         }
     },
     update: async (req,res,next) => {
-        try {               
+        try {           
             const reg = await models.Progreso.findByIdAndUpdate({_id:req.body._id},
             { 
                 completed: req.body.completed, 
