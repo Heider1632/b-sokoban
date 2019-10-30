@@ -1,6 +1,29 @@
 const models = require('../models');
 const fs  = require('fs')
-const path  = require('path')
+
+createJsonFile = (path, data) => {
+    fs.open(path, 'wx', function(error, fileDescriptor){        
+        if(!error && fileDescriptor){        
+            let stringData = JSON.stringify(data, null, 2); 
+            //console.log(stringData)       
+            fs.writeFile(fileDescriptor, stringData, function(error){        
+                if(!error){        
+                    fs.close(fileDescriptor, function(error){        
+                        if(!error){        
+                            console.log("done")       
+                        }else{        
+                            console.log('Error in close file');        
+                        }        
+                    });        
+                }else{        
+                    callback('Error in writing file.');        
+                }        
+            });        
+        }  else {
+            console.log("error to try writte")
+        }      
+    })
+}
 
 module.exports =  {
     add: async (req,res,next) =>{
@@ -57,8 +80,8 @@ module.exports =  {
     list: async (req,res,next) => {
         try {
             let valor=req.query.valor;
-            const reg=await models.Juego.find({ nombre: new RegExp(valor, 'i') },{createdAt:0})
-            .sort({'createdAt':1});
+            const reg=await models.Juego.find({ nombre: new RegExp(valor, 'i') })
+            .sort({'createdAt':-1});
 
             res.status(200).json(reg);
         } catch(e){
@@ -78,66 +101,5 @@ module.exports =  {
             });
             next(e);
         }
-    },
-    saveJSON: async (req, res, next) => {
-        let { level, steps, user, start, end, duration  } = req.body.json;
-
-        let _dir = path.join(__dirname + `/../public/users/${user._id}/`);
-
-        fs.mkdir(_dir, { recursive: true }, (err) => {
-            if (err) console.log("the director exist!");
-        });
-
-        let filename = _dir + level +  '.json';
-
-        let data = {
-            level,
-            steps,
-            start,
-            end,
-            duration
-        }
-
-        fs.open(filename, 'wx', function(error, fileDescriptor){        
-            if(!error && fileDescriptor){        
-                let stringData = JSON.stringify(data, null, 2); 
-                //console.log(stringData)       
-                fs.writeFile(fileDescriptor, stringData, function(error){        
-                    if(!error){        
-                        fs.close(fileDescriptor, function(error){        
-                            if(!error){        
-                                console.log("done")       
-                            }else{        
-                                console.log('Error in close file');        
-                            }        
-                        });        
-                    }else{        
-                        callback('Error in writing file.');        
-                    }        
-                });        
-            }  else {
-              console.log("error to try writte")
-            }      
-        })
-
-        res.status(200); 
-    },
-    getJSON : async (req, res, next) => {
-
-        let _dir = path.join(__dirname + `/../public/users/${req.query._id}/`);
-
-        let levels = []
-
-        let files = fs.readdirSync(_dir);
-        if(files.length != 0) {
-            files.forEach(file => {
-                let level = JSON.parse(fs.readFileSync(_dir + file, 'utf-8'))
-                if(level){
-                    levels.push(level)
-                }
-            });
-        } 
-
-        res.status(200).json(levels);
     }
 }

@@ -5,8 +5,7 @@ const router=routerx();
 
 router.post('/add', progresoController.add);
 router.get('/query',progresoController.query);
+router.get('/one', progresoController.one);
 router.get('/list', progresoController.list);
 router.post('/update', progresoController.update);
-router.post('/status', progresoController.changeStatus);
-
 module.exports = router;

@@ -1,0 +1,480 @@
+{
+  "level": "2",
+  "steps": [
+    {
+      "icon": "arrow_upward",
+      "text": "arriba",
+      "keyCode": 38,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_back",
+      "text": "izquierda",
+      "keyCode": 37,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        },
+        {
+          "counter": 2,
+          "done": true
+        },
+        {
+          "counter": 3,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_forward",
+      "text": "derecha",
+      "keyCode": 39,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_downward",
+      "text": "abajo",
+      "keyCode": 40,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_forward",
+      "text": "derecha",
+      "keyCode": 39,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_back",
+      "text": "izquierda",
+      "keyCode": 37,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_downward",
+      "text": "abajo",
+      "keyCode": 40,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_back",
+      "text": "izquierda",
+      "keyCode": 37,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        },
+        {
+          "counter": 2,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_upward",
+      "text": "arriba",
+      "keyCode": 38,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_forward",
+      "text": "derecha",
+      "keyCode": 39,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_upward",
+      "text": "arriba",
+      "keyCode": 38,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_forward",
+      "text": "derecha",
+      "keyCode": 39,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        },
+        {
+          "counter": 2,
+          "done": true
+        },
+        {
+          "counter": 3,
+          "done": true
+        },
+        {
+          "counter": 4,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_downward",
+      "text": "abajo",
+      "keyCode": 40,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_back",
+      "text": "izquierda",
+      "keyCode": 37,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_upward",
+      "text": "arriba",
+      "keyCode": 38,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_back",
+      "text": "izquierda",
+      "keyCode": 37,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        },
+        {
+          "counter": 2,
+          "done": true
+        },
+        {
+          "counter": 3,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_downward",
+      "text": "abajo",
+      "keyCode": 40,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        },
+        {
+          "counter": 2,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_forward",
+      "text": "derecha",
+      "keyCode": 39,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_upward",
+      "text": "arriba",
+      "keyCode": 38,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_forward",
+      "text": "derecha",
+      "keyCode": 39,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_upward",
+      "text": "arriba",
+      "keyCode": 38,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_forward",
+      "text": "derecha",
+      "keyCode": 39,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        },
+        {
+          "counter": 2,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_downward",
+      "text": "abajo",
+      "keyCode": 40,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_back",
+      "text": "izquierda",
+      "keyCode": 37,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        },
+        {
+          "counter": 2,
+          "done": true
+        },
+        {
+          "counter": 3,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_downward",
+      "text": "abajo",
+      "keyCode": 40,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_back",
+      "text": "izquierda",
+      "keyCode": 37,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        },
+        {
+          "counter": 2,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_upward",
+      "text": "arriba",
+      "keyCode": 38,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_forward",
+      "text": "derecha",
+      "keyCode": 39,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_upward",
+      "text": "arriba",
+      "keyCode": 38,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_forward",
+      "text": "derecha",
+      "keyCode": 39,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        },
+        {
+          "counter": 2,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_back",
+      "text": "izquierda",
+      "keyCode": 37,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        },
+        {
+          "counter": 2,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_downward",
+      "text": "abajo",
+      "keyCode": 40,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        },
+        {
+          "counter": 2,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_forward",
+      "text": "derecha",
+      "keyCode": 39,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        }
+      ],
+      "done": false
+    },
+    {
+      "icon": "arrow_upward",
+      "text": "arriba",
+      "keyCode": 38,
+      "count": [
+        {
+          "counter": 1,
+          "done": true
+        }
+      ],
+      "done": false
+    }
+  ],
+  "start": 1572048341602,
+  "end": 1572048342347,
+  "duration": 745
+}
